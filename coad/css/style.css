@@ -1,0 +1,460 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+/* -------------------------------------row1(main-section) */
+.row1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.row1_wrap {
+  width: 1440px;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.row1 .main_txt {
+  position: absolute;
+  top: 170px;
+  left: 400px;
+  font-family: 'Sacramento', cursive;
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+.row1 .photo1-1 {
+  border: 1px solid #2f2f2f;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 210px;
+  left: 180px;
+  box-shadow: 2px 2px 6px #6c6c6c;
+}
+.row1 .photo1-2 {
+  background-color: #fff;
+  width: 410px;
+  height: 300px;
+  position: absolute;
+  top: 250px;
+  left: 220px;
+  box-shadow: 5px 5px 6px #6c6c6c; 
+}
+.row1 .photo1-2 img, .row1 .photo2-2 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.row1 .photo2-1 {
+  border: 1px solid #2f2f2f;
+  width: 450px;
+  height: 670px;
+  position: absolute;
+  top: 90px;
+  right: 170px;
+  box-shadow: 1px 1px 1px #6c6c6c;
+}
+.row1 .photo2-2 {
+  background-color: #fff;
+  width: 450px;
+  height: 590px;
+  position: absolute;
+  top: 130px;
+  right: 220px;
+  box-shadow: 7px 7px 6px #6c6c6c;
+}
+.row1_bottom {
+  background: #ddd;
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  left: 0;
+  bottom: 0;
+}
+.row1 .border {
+  border-top: 1px solid #2f2f2f;
+  border-right: 1px solid #2f2f2f;
+  border-bottom: 1px solid #2f2f2f;
+  width: 50%;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.p_box {
+  width: 1440px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p_box p {
+  margin-left: 220px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.p_box p:first-child {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+.p_box p:last-child {
+  line-height: 20px;
+}
+.contact_button {
+  width: 110px;
+  height: 35px;
+  font-size: 20px;
+  line-height: 35px;
+  color: #fff;
+  background-color: #6f6f6f;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px #2f2f2f;
+}
+.contact_button:hover {
+  background-color: #000;
+  font-weight: 500;
+}
+/* Featherlight Custom CSS */
+.featherlight .featherlight-content {
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: auto;
+  padding: 0;
+  border-bottom: 25px solid transparent;
+  margin-left: 0;
+  margin-right: 0;
+  max-height: 100%;
+  background: #fff;
+  cursor: auto;
+  white-space: normal;
+  width: 30%;
+  height: 50%;
+}
+.featherlight iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.featherlight .featherlight-close-icon {
+  position: absolute;
+  z-index: 9999;
+  top: 20px;
+  right: 20px;
+  line-height: 25px;
+  width: 25px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  border: none;
+  padding: 0;
+  font-size: 30px;
+  outline: none;
+}
+/* contact */
+.contact {
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  line-height: 50px;
+}
+.contact_con div {
+  text-align: center;
+  height: 220px;
+}
+.contact_con img {
+  width: 200px;
+  height: auto;
+}
+.contact_con p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* -------------------------------------row2(famous-saying) */
+.row2 {
+  height: 20px;
+  width: 100%;
+  background-color: #ddd;
+  position: relative;
+  margin-top: 0;
+  padding-top: 250px;
+}
+.row2_wrap {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #000;
+  padding: 2em 2em 3em 2em;
+  width: 55%;
+}
+.row2_h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 27px;
+}
+.row2_h3:after {
+  content: "─";
+  display: block;
+  clear: both;
+}
+.quote span {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+.author {
+  margin-top: 20px;
+}
+.row2 .button {
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  background-color: #6c6c6c;
+  color: #fff;
+  font-weight: 200;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 390px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.row2 .button:hover {
+  background-color: #000;
+  width: 160px;
+}
+/* -------------------------------------row3(gallery) */
+.row3 {
+  width: 100%;
+  height: 100vh;
+  margin-top: 350px;
+  position: relative;
+}
+.row3_wrap {
+  width: 80%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 1;
+}
+.row3_h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 50px;
+}
+.arrow {
+  position: absolute;
+  width: 100%;
+  transform: translateY(-55%);
+  top: 55%;
+  z-index: 1;
+}
+.arrow .left {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-top: 5px solid #000;
+  border-right: 5px solid #000;
+  transform: rotate(225deg);
+}
+.arrow .right {
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-top: 5px solid #000;
+  border-right: 5px solid #000;
+  transform: rotate(45deg);
+}
+.gallery {
+  position: relative;
+}
+.gallery_img {
+  width: 600px;
+  height: 700px;
+  position: absolute;
+  background-color: #000;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.gallery_img > div {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.gallery_img img {
+  width: 100%;
+  height: 100%;
+}
+.gallery_text {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 660px;
+  left: 150px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  color: #2f2f2f;
+}
+/* -------------------------------------row4(myphoto) */
+.row4 {
+  height: 1200px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  background-color: #000;
+  margin-top: 100px;
+}
+.row4_h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+.album {
+  width: 915px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.album>div {
+  float: left;
+}
+.album>div:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.row4 .box {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border: 15px solid #fff;
+  float: left;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.row4 .box:nth-child(1),
+.row4 .box:nth-child(2) {
+  border-right: 0;
+}
+.row4 .box:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+.row4 .box2_01 {
+  width: 400px;
+}
+.row4 .box2_02 {
+  width: 500px;
+}
+.row4 .width_02>div {
+  height: 350px;
+  border-top: 0;
+  border-bottom: 0;
+}
+.row4 .width_02>div:last-child {
+  border-right: 15px solid #fff;
+}
+.row4 .box .img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.row4 .box .img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.row4 .box .img img:hover{
+  transform: scale(1.05);
+}
+/* -------------------------------------row5(top-button) */
+.top {
+  text-align: center;
+}
+/* -------------------------------------footer */
+footer {
+  width: 100%;
+  height: 300px;
+  margin-top: 150px;
+  position: relative;
+}
+.f_wrap01 {
+  height: 150px;
+  width: 600px;
+  background-color: #fff;
+  position: inherit;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+.f_wrap01 .write {
+  width: 60%;
+  border: 0;
+  border-bottom: 1px solid #6c6c6c;
+  padding: 5px;
+  transform: translateX(30%);
+  text-align: center;
+  outline: none;
+}
+.hidden {
+  display: none;
+}
+.f_wrap02 {
+  height: 200px;
+  width: 100%;
+  background-color: #ddd;
+  position: absolute;
+  top: 100px;
+  color: #2c2c2c;
+  text-align: center;
+}
+#greeting {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 50px;
+  font-weight: 200;
+  border-top: 1px solid #6c6c6c;
+}
+#weather {
+  padding-top: 80px;
+}
+#clock {
+  margin-top: 5px;
+  font-size: 20px;
+}
+#copy {
+  font-size: 12px;
+  margin-top: 20px;
+}

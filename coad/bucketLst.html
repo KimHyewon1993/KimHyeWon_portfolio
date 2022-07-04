@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/bucketlist.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>My30Stroy</title>
+</head>
+<body>
+  <header>
+    <div class="gnb-inner">
+      <div class="logo">
+        <h1><a href="index.html"><img src="images/logo.png"></a></h1>
+      </div><!--logo-->
+      <div class="gnb">
+        <div class="menu">
+          <a href="index.html"><i class="fas fa-home"></i>Main</a>
+          <a href="introduce.html">introduce</a>
+          <a href="myhistory.html">my history</a>
+          <a href="mydiary.html">my diary</a>
+          <a href="bucketLst.html">my bucket list</a>
+        </div>
+        <div class="another">
+          <a href="another_site/index.html"><button>another site</button></a>
+        </div>
+      </div><!--gnb-->
+      <div class="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div><!--trigger-->
+    </div><!--gnb_inner-->
+  </header>
+  <section>
+  <div class="list_wrap">
+    <h2>bucket list</h2>
+    <form id="todo-form">
+      <input class="todo" type="text" placeholder="write a your bucket list and press Enter" required />
+    </form>
+    <ul id="todo-list"></ul>
+  </div>
+  <div id="copy">Copyright ⓒ kimhyewon_my30story All rights reserved.</div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/caf6a2635a.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/bucketlist.js"></script>
+</body>
+</html>

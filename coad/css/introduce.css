@@ -1,0 +1,53 @@
+@charset "utf-8";
+.intro_wrap {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+.intro_wrap h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+.img_slide {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img_slide > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.img_slide > div img {
+  width: 100%;
+  height: auto;
+}
+.intro_txt {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 27px;
+}
+.intro_txt h3 {
+  margin-bottom: 15px;
+}
+.txt_01,
+.txt_02,
+.txt_03 {
+  margin-bottom: 60px;
+}
+.txt_04 {
+  margin-bottom: 200px;
+}
+#copy {
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+}

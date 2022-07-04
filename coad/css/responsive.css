@@ -1,0 +1,298 @@
+@media (max-width: 768px) {
+  /* ------------------------------row1(main-image) */
+  .row1_wrap {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    overflow: hidden;
+  }
+  .row1 .main_txt {
+    display: none;
+  }
+  .row1 .photo1-1, .row1 .photo1-2 {
+    display: none;
+  }
+  .row1 .photo2-1 {
+    display: none;
+  }
+  .row1 .photo2-2 {
+    background-color: #6c6c6c;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -80px;
+    left: 0;
+  }
+  .row1 .photo2-2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .row1_bottom {
+    z-index: 1;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    left: 0;
+    bottom: 0;
+  }
+  .row1 .border {
+    display: none;
+  }
+  .p_box {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+  }
+  .p_box p {
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  .p_box p:first-child {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+  }
+  .p_box p:nth-child(3) {
+    display: none;
+  }
+  .contact_button {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    bottom: 50px;
+    right: 15px;
+    font-size: 17px;
+  }
+  /* Featherlight Custom CSS */
+  .featherlight .featherlight-content {
+    width: 60%;
+    height: 60%;
+  }
+  /* ------------------------------row2(famous-saying) */
+  .row2 {
+    margin-top: 0;
+    padding-top: 150px;
+    margin-bottom: 200px;
+  }
+  .row2_wrap {
+    top: 110px;
+    padding: 0.5em 0.5em 2em 0.5em;
+    width: 80%;
+    height: 180px;
+  }
+  .row2 .button {
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #6c6c6c;
+    color: #fff;
+    font-weight: 200;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .quote span {
+    font-size: 15px;
+    color: #5c5c5c;
+  }
+  /* ------------------------------row3(gallery) */
+  .row3 {
+    margin-top: 220px;
+  }
+  .row3_wrap {
+    width: 100%;
+  }
+  .row3_h3 {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .arrow {
+    width: 20%;
+    top: inherit;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .arrow .left {
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    border-top: 5px solid #000;
+    border-right: 5px solid #000;
+  }
+  .arrow .right {
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    border-top: 5px solid #000;
+    border-right: 5px solid #000;
+  }
+  .gallery_img {
+    width: 95%;
+    height: auto;
+  }
+  .gallery_img img {
+    width: 100%;
+    height: 100%;
+  }
+  .gallery_text {
+    display: none;
+  }
+  /* ------------------------------row4(myphoto) */
+  .row4 {
+    height: 550px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+  }
+  .row4_h3 {
+    font-size: 20px;
+  }
+  .album {
+    width: 345px;
+    margin-top: 30px;
+  }
+  .album>div {
+    float: none;
+  }
+  .row4 .box {
+    width: 115px;
+    height: 115px;
+    border: 5px solid #fff;
+  }
+  .row4 .box2_01 {
+    width: 160px;
+  }
+  .row4 .box2_02 {
+    width: 185px;
+  }
+  .row4 .width_02>div {
+    height: 170px;
+  }
+  .row4 .width_02>div:last-child {
+    border-right: 5px solid #fff;
+  }
+  /* ------------------------------row5(top-button) */
+  .row5 {
+    margin-top: 100px;;
+  }
+  /* ------------------------------footer */
+  .f_wrap01 {
+    width: 75%;
+    position: absolute;
+    left: calc(19% - 30px);
+  }
+  #greeting {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 50px;
+    font-weight: 200;
+    border-top: 1px solid #6c6c6c;
+  }
+  #clock {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* -------------------------Introduce-page-------------------------- */
+  .intro_wrap {
+    width: 90%;
+  }
+  .intro_wrap h2 {
+    font-size: 30px;
+  }
+  .intro_txt {
+    text-align: left;
+    font-size: 15px;
+  }
+  .intro_txt h3 {
+    margin-bottom: 10px;
+  }
+  .txt_01,
+  .txt_02,
+  .txt_03 {
+    margin-bottom: 50px;
+  }
+  .txt_04 {
+    margin-bottom: 150px;
+  }
+  #copy {
+    margin-bottom: 30px;
+  }
+
+  /* -------------------------My History-page-------------------------- */
+  .history_wrap {
+    width: 90%;
+    margin-top: 100px;
+  }
+  .history_wrap > h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .photo {
+    float: none;
+    margin: 0 auto;
+    width: 280px;
+  }
+  .history_txt {
+    padding: 20px;
+    margin-left: 0px;
+    margin-bottom: 100px;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .history_txt h2 {
+    margin-bottom: 20px;
+  }
+  .work_txt {
+    margin-top: 80px;
+  }
+  .history_txt ul {
+    margin-bottom: 50px;
+  }
+  .history_txt li {
+    width: 100%;
+    line-height: 28px;
+  }
+  .history_txt span {
+    display: block;
+    width: 100%;
+    float: right;
+  }
+  #copy {
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* -------------------------My Diary-page-------------------------- */
+  /* mydiary.css에 responsive 도 포함했음 (featherlight때문) */
+  /* -------------------------My Bucketlist-page-------------------------- */
+  .list_wrap {
+    width: 80%;
+  }
+  .list_wrap h2 {
+    font-size: 30px;
+  }
+
+}
