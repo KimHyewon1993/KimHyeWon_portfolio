@@ -1,0 +1,849 @@
+@charset "utf-8";
+
+* {margin: 0;padding: 0;}
+a {color: inherit;text-decoration: none;}
+ul {list-style: none;}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.5s;
+}
+
+header.on {
+  position: fixed;
+  background-color: #fff;
+}
+
+header.on .util {
+  color: #000;
+}
+
+header.on .line {
+  background-color: #000;
+}
+
+header.on .util li input {
+  border: 1px solid #000;
+}
+
+header.on .util li:first-child {
+  background-image: url(../images/search_iconB.png);
+}
+
+header .top {
+  display: none;
+  position: absolute;
+  top: 7px;
+  right: 20px;
+}
+
+header.on .top {
+  display: block;
+}
+
+header .wrap {
+  width: 1440px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header h1 {
+  padding-top: 30px;
+}
+
+header .gnb {
+  position: absolute;
+  bottom: 20px;
+  left: 200px;
+  font-size: 20px;
+}
+
+header .gnb li {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+header .util {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: 17px;
+  color: #fff;
+  width: 400px;
+  text-align: center;
+}
+
+header .util li {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header .util li:first-child {
+  margin-left: 0;
+  margin-right: 20px;
+  background-image: url(../images/search_icon.png);
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+
+header .util li input {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  height: 22px;
+}
+
+header .line {
+  width: 800px;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: #fff;
+}
+
+/* ----------------------------------------header 끝 */
+.mv {
+  width: 100%;
+  height: 900px;
+}
+
+.mv_img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.mv_img .back_img {
+  position: absolute;
+  z-index: 22;
+}
+
+.woman {
+  position: absolute;
+  left: 650px;
+  top: 320px;
+  z-index: 23;
+}
+
+.mv_img .busan_img {
+  width: 100%;
+  height: 100vh;
+}
+
+.mv_img .busan_img div {
+  height: 898px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mv_img .busan_img .busan01 {
+  display: block;
+  background-image: url(../images/busan01.jpg);
+}
+
+.mv_img .busan_img .busan02 {
+  background-image: url(../images/busan02.jpg);
+}
+
+.mv_img .busan_img .busan03 {
+  background-image: url(../images/busan03.jpg);
+}
+
+.mv_txt {
+  position: absolute;
+  top: 300px;
+  left: 200px;
+  width: 420px;
+  height: 300px;
+  text-align: center;
+  z-index: 50;
+}
+
+.mv_txt h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.mv_txt p {
+  font-size: 25px;
+}
+
+.mv_txt a {
+  display: block;
+  margin-top: 30px;
+}
+
+/* -------------------------------------------mv 끝 */
+.event {
+  width: 100%;
+  height: 100vh;
+  margin-top: 200px;
+}
+
+.event h3 {
+  padding-top: 120px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+}
+
+.event h3:after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: #2f2f2f;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.event p {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+.slide_banner {
+  margin-top: 50px;
+  height: 550px;
+  position: relative;
+}
+
+.slide_banner .s_banner01 {
+  margin-top: 70px;
+}
+
+.slide_banner .s_banner02 {
+  background-color: wheat;
+}
+
+#ctrl {
+  width: 100%;
+  position: absolute;
+  top: 1650px;
+}
+
+#ctrl .prev {
+  float: left;
+  cursor: pointer;
+}
+
+#ctrl .next {
+  float: right;
+  cursor: pointer;
+}
+
+#ctrl button {
+  background-color: transparent;
+  border: 0;
+}
+
+.slick-dots {
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.slick-dots li {
+  float: left;
+  margin-right: 10px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #ddd;
+}
+
+.slick-dots li:last-child {
+  margin-right: 0;
+}
+
+.slick-dots li button {
+  background-color: #eee;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 0;
+  text-indent: -9999px;
+}
+
+/* -------------------------------------------slide_banner 끝 */
+.con_wrap {
+  position: relative;
+}
+
+.con_wrap .top {
+  position: sticky;
+  top: 120px;
+  left: 97%;
+  width: 40px;
+  height: 40px;
+  z-index: 988;
+}
+
+/* ----------------------------------- */
+.r1 {
+  width: 1440px;
+  height: 100vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map {
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+
+.map img {
+  width: auto;
+  height: 600px;
+}
+
+/* -------------------------------- */
+.map ul {
+  width: 100%;
+  height: 100%;
+}
+
+.area li {
+  position: absolute;
+  display: none;
+}
+
+.map li img {
+  width: auto;
+  height: 33px;
+}
+
+.area .gaduk {
+  bottom: 65px;
+  left: 162px;
+}
+
+.area .gangshu {
+  bottom: 240px;
+  left: 240px;
+}
+
+.area .saha {
+  bottom: 150px;
+  left: 340px;
+}
+
+.area .shugu {
+  bottom: 155px;
+  left: 385px;
+}
+
+.area .junggu {
+  left: 410px;
+  bottom: 180px;
+}
+
+.area .donggu {
+  left: 430px;
+  bottom: 215px;
+}
+
+.area .namgu {
+  left: 485px;
+  bottom: 200px;
+}
+
+.area .yungdo {
+  bottom: 140px;
+  left: 440px;
+}
+
+.area .sashang {
+  bottom: 260px;
+  left: 350px;
+}
+
+.area .jingu {
+  left: 450px;
+  bottom: 265px;
+}
+
+.area .suyung {
+  bottom: 270px;
+  left: 515px;
+}
+
+.area .haeundae {
+  left: 575px;
+  bottom: 285px;
+}
+
+.area .gijang {
+  left: 630px;
+  bottom: 370px;
+}
+
+.area .gumjung {
+  left: 490px;
+  bottom: 400px;
+}
+
+.area .bukgu {
+  left: 400px;
+  bottom: 360px;
+}
+
+/* ---------------------------------------지역 */
+.beach li {
+  position: absolute;
+  display: none;
+}
+
+.beach .b_dadaepo {
+  left: 330px;
+  bottom: 100px;
+}
+
+.beach .b_songdo {
+  left: 390px;
+  bottom: 130px;
+}
+
+.beach .b_gamji {
+  left: 455px;
+  bottom: 110px;
+}
+
+.beach .b_gwangan {
+  left: 505px;
+  bottom: 240px;
+}
+
+.beach .b_haeundae {
+  left: 560px;
+  bottom: 255px;
+}
+
+.beach .b_songjung {
+  left: 610px;
+  bottom: 290px;
+}
+
+.beach .b_illgwang {
+  left: 650px;
+  bottom: 400px;
+}
+
+.beach .b_imlang {
+  left: 685px;
+  bottom: 490px;
+}
+
+/* --------------------------------------해수욕장 */
+.traffic {
+  width: 100%;
+  height: 100%;
+}
+
+.traffic li {
+  position: absolute;
+}
+
+.t_sashang {
+  left: 350px;
+  bottom: 250px;
+}
+
+.t_dongbu {
+  left: 500px;
+  bottom: 400px;
+}
+
+.t_donglae {
+  left: 460px;
+  bottom: 300px;
+}
+
+.t_haeundae {
+  left: 580px;
+  bottom: 270px;
+}
+
+.t_jachun {
+  left: 660px;
+  bottom: 460px;
+}
+
+.t_gijang {
+  left: 620px;
+  bottom: 370px;
+}
+
+.t_airgimhae {
+  left: 250px;
+  bottom: 300px;
+}
+
+/* -------------------------------------교통 */
+.r1 .txt {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+.r1 .txt h3 {
+  font-size: 40px;
+}
+
+.r1 .txt p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.r1 .icon {
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+}
+
+.r1 .icon p {
+  text-align: center;
+}
+
+.r1 .icon div {
+  float: left;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.r1 .icon div:last-child {
+  margin-right: 0;
+}
+
+/* --------------------------------------------r1 지도 영역 끝 */
+.r2 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.r2 .h3 {
+  width: 650px;
+  height: 75px;
+  background-color: #ddd;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  box-shadow: 5px 5px 5px #aaa;
+}
+
+.r2 h3 {
+  font-size: 40px;
+  text-align: right;
+  padding: 0 70px;
+  line-height: 75px;
+}
+
+.r2 .wrap {
+  position: relative;
+  margin-top: 200px;
+  width: 1440px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.r2 .arrow {
+  position: absolute;
+  width: 100%;
+  top: 450px;
+}
+
+.r2 .arrow .left {
+  float: left;
+}
+
+.r2 .arrow .right {
+  float: right;
+}
+
+.r2 .number {
+  z-index: 5;
+  position: absolute;
+  top: 500px;
+  left: 70px;
+  width: 209px;
+  height: 87px;
+}
+
+.r2 .txt {
+  padding: 30px;
+  width: 500px;
+  height: 300px;
+  background-color: #e8faff;
+  box-sizing: border-box;
+  position: absolute;
+  left: 100px;
+  top: 540px;
+}
+
+.r2 .txt:after {
+  content: '';
+  width: 480px;
+  height: 280px;
+  left: 10px;
+  top: 10px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+}
+
+.r2 .txt .name {
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  background-color: #396ae7;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.r2 .txt p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.r2 .tag {
+  margin-top: 40px;
+}
+
+.r2 .tag:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.r2 .tag div {
+  float: left;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.r2 .img {
+  width: 900px;
+  height: 500px;
+  position: absolute;
+  top: 160px;
+  right: 35px;
+}
+
+/* ----------------------------------------------r2 인기여행지탑5 끝 */
+.r3 {
+  background-color: #fddee2;
+  width: 100%;
+  height: 1500px;
+  position: relative;
+  padding-bottom: 100px;
+  margin-top: 100px;
+  padding-top: 100px;
+}
+
+.r3 .wrap {
+  width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.r3 .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.r3 .left_box {
+  position: sticky;
+  top: 300px;
+  left: 0;
+}
+
+.r3 .txt {
+  position: sticky;
+  top: 700px;
+  right: 10px;
+  float: right;
+  text-align: right;
+  color: #aaa;
+  width: 400px;
+  height: 150px;
+}
+
+.r3 .txt .txt_img {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.r3 .txt p {
+  padding-top: 10px;
+}
+
+.r3 .zone:nth-child(2) {
+  padding-top: 150px;
+}
+
+.r3 .nemo {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin-top: 50px;
+}
+
+.r3 .nemo .img {
+  width: 207px;
+  height: 130px;
+  border: 1px solid #000;
+  margin: 15px auto 0;
+}
+
+.r3 .nemo .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.r3 .nemo_txt {
+  width: 207px;
+  margin: 5px auto;
+}
+
+.r3 .tag_txt {
+  font-size: 14px;
+}
+
+.r3 .num {
+  background-image: url(../images/heart.png);
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  margin-top: 5px;
+}
+
+/* ----------------------------------------------r3 핫플 끝 */
+.r4 {
+  width: 1440px;
+  margin: 200px auto;
+}
+
+.r4 h3 {
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+}
+
+.r4 h3:after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: #2f2f2f;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.r4 p {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+.r4 .trip {
+  width: 1270px;
+  margin: 100px auto;
+}
+
+.r4 .trip:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.r4 .trip .box {
+  float: left;
+  margin-right: 30px;
+  transition: all 0.2s;
+  width: 295px;
+  height: 290px;
+}
+
+.r4 .trip .box:last-child {
+  margin-right: 0;
+}
+
+.r4 .box:hover {
+  box-shadow: 3px 3px 7px #aaa;
+  transform: scale(1.02);
+}
+
+/* --------------------------------------------------r4여행지추천 끝 */
+footer {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-color: #b6eafc;
+  color: #000;
+}
+
+footer h1 {
+  padding-top: 50px;
+}
+
+address {
+  margin-top: 50px;
+  font-style: normal;
+  font-size: 15px;
+}
+
+footer ul {
+  font-size: 0;
+  margin-top: 25px;
+}
+
+footer ul:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 16px;
+  color: #2f2f2f;
+}
+
+footer ul li:after {
+  content: '|';
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+footer ul li:last-child:after {
+  content: '';
+}

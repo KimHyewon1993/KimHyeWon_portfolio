@@ -1,0 +1,397 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+header{
+    background-color: #000;
+}
+header .wrap{
+    width: 980px;
+    height: 142px;
+    margin: 0 auto;
+    position: relative;
+}
+header h1{
+    border-bottom: 1px solid #666;
+    padding-top: 35px;
+    padding-bottom: 8px;
+}
+.gnb{
+    margin-top: 5px;
+}
+.gnb:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.gnb li{
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 20px;
+    line-height: 40px;
+    background-color: #000;
+}
+.gnb li:hover{
+    background-color: #fff;
+    color: #000;
+}
+.gnb .yellow{
+    color: yellow;
+    float: right;
+}
+.gnb .yellow:hover{
+    background-color: transparent;
+    color: yellow;
+}
+.sub_gnb{
+    position: absolute;
+    top: 55px;
+    left: 300px;
+}
+.sub_gnb li{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Arial';
+    margin-right: 20px;
+}
+.sub_gnb li:last-child{
+    color: #00a44e;
+}
+
+.util{
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+.util li{
+    float: left;
+    font-size: 12px;
+    color: #c5c5c5;
+}
+.util li:after{
+    content:'|';
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.util li:last-child:after{
+    content: none;
+}
+.search{
+    position: absolute;
+    top: 55px;
+    right: 0;
+}
+.search input{
+    width: 166px;
+    height: 25px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    background-image: url(../images/back_src.jpg);
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    /* 
+        baakground-position은 기본적으로
+        background-position: x값 y값
+        background-position: right 10px top 20px;
+          -> 오른쪽끝에서 10px 떨어진위치,
+             위에서 20px 떨어진 위치
+    */
+    padding-right: 20px;
+    /* 돋보기 위로 글자가 올라가지 않게 하기 위한 조치 */
+}
+
+/* ------------------------------------------------------------------- */
+.mv{
+    position: relative;
+}
+.mv .mv_img{
+    height: 400px;
+    background-image: url(../images/main_bn.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.mv .mv_img a{
+    display: block;
+    height: 100%;
+}
+.mv .pager{
+    font-size: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+.mv .pager li{
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.mv .pager a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.mv .arrow{
+    position: absolute;
+    width: 1000px;
+    top: 170px;
+    left: 50%;
+    margin-left: -500px;
+}
+.mv .arrow .left{
+    float: left;
+}
+.mv .arrow .right{
+    float: right;
+}
+
+/* ---------------------------------------------------------------------- */
+section{
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.row1:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.row1 div:nth-child(1){
+    float: left;
+}
+.row1 div:nth-child(2){
+    float: right;
+}
+/* ------------------------------------------------------------------------------ */
+.row2{
+    margin-top: 18px;
+}
+.row2:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.row2 div{
+    float: left;
+    margin-right: 10px;
+}
+.row2 div:last-child{
+    margin-right: 0;
+}
+/* -------------------------------------------------------------------- */
+.row3 h3{
+}
+.row3 .con:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.row3{
+    position: relative;
+    margin-top: 18px;
+}
+.row3 .con{
+    width: 875px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.row3 .con>div{
+    float: left;
+    width: 175px;
+    height: 209px;
+    position: relative;
+}
+.row3 .con .num{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.row3 .item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 
+        position:absolute로
+        항상 가운데에 위치시키는 법
+        1. top:50%; left: 50%; 를 지정
+        2. transform: translate(-50%, -50%)
+
+        -position:absolute를 쓰지 않으면 안될 상황에서만 사용
+    */
+}
+.row3 .con .txtBox{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.row3 .arrBtn{
+    width: 940px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.row3 .prev{
+    float: left;
+}
+.row3 .next{
+    float: right;
+}
+/* ------------------------------------------------------ */
+.row4{
+    margin-top: 18px;
+}
+/* --------------------------------------------------------- */
+.row5{
+    margin-top: 10px;
+}
+.row5 .con{
+    margin-top: 18px;
+}
+.row5 .con:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.row5 .con>div{
+    float: left;
+    font-size: 14px;
+    width: 305px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 7px;
+    padding-right: 7px;
+}
+.row5 .con>div:after{
+    content: '';  /*인라인요소!!!*/
+    display: block;
+    width: 1px;
+    height: 30px;
+    background-color: #666;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+}
+/* css 로 가상 html엘리멘트를 만들어서
+    장식적인 요소 추가하기 -> 
+    해당요소:after{content:'';} 마지막자식으로 추가됨
+    해당요소:before{content:'';} 첫번째자식으로 추가됨
+    
+    기본적으로 가상요소들을 인라인요소이므로,
+    사용용도에 따라 display:block으로 변경해주어야 한다
+*/
+.row5 .con>div:last-child:after{
+    content: none;
+}
+.row5 h4{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.row5 .news{
+    background-image: url(../images/ico_news.jpg);
+    background-position: 0 center;
+    padding-left: 80px;
+}
+.row5 .news li{
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.row5 .membership{
+    background-image: url(../images/ico_membership.jpg);
+    background-position: 40px center;
+    padding-left: 120px;
+}
+.row5 .cscenter{
+    background-image: url(../images/ico_cscenter.jpg);
+    background-position: 20px center;
+    padding-left: 100px;
+}
+/* ------------------------------------------------------------------------ */
+.sub_bn{
+    background-color: #f2f2f2;
+    margin-top: 18px;
+    text-align: center;
+}
+/* --------------------------------------------------- */
+footer{
+    background-color: #000;
+    height: 200px;
+}
+.fWrap{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+    padding: 18px 0;
+}
+.fWrap h1{
+    border-bottom: 1px solid #666;
+    padding-bottom: 8px;
+}
+.bt_gnb{
+    position: absolute;
+    top: 30px;
+    left: 250px;
+}
+.bt_gnb li{
+    float: left;
+    margin-right: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+}
+.bt_gnb li:last-child{
+    margin-right: 0;
+}
+.sns{
+    margin-top: 10px;
+}
+.sns li{
+    float: left;
+    margin-right: 10px;
+}
+.saveBox{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px; 
+    position: absolute;
+    left: 0;
+    top: 130px;
+}
+address{
+    position: absolute;
+    right: 50px;
+    top: 90px;
+    color: gray;
+    font-size: 12px;
+    font-style: normal;
+}
+address span{
+    margin-top: 5px;
+    color: #fff;
+    display: block;
+}

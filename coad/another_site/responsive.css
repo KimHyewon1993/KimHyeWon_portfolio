@@ -188,6 +188,9 @@
     height: 100%;
     margin-top: 50px;
   }
+  .site_button {
+    display: none;
+  }
 
   /* ############### Section : plan ############### */
   .plan-inner {

@@ -1,0 +1,694 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+body{
+    border-top: 2px solid #50b5ff;
+}
+/* ======================================== */
+header{
+    width: 1092px;
+    height: 57px;
+    margin: 0 auto;
+    /* 
+    margin-top: 0;
+    margin-bottom: 0;
+
+    margin-right: auto;
+    margin-left: auto;
+    */
+    position: relative;
+}
+h1{
+    padding-top: 10px;
+}
+.gnb{
+    position: absolute;
+    left: 220px;
+    top: 20px;
+}
+.gnb li{
+    float: left;
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.gnb li:last-child{
+    margin-right: 0;
+}
+.search{
+    position: absolute;
+    right: 150px;
+    top: 20px; 
+}
+.search button{
+    width: 20;
+    height: 17px;
+    right: 2px;
+    top: 2px;
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.search input{
+    width: 180px;
+    height: 23px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    box-sizing: border-box;
+    /* 
+    지정된 너비, 높이 안에서
+    패딩과 보더를 포함시킴
+    */
+}
+.loginbox{
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.loginbox button{
+    width: 64px;
+    height: 25px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-left: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: bold;
+}
+.loginbox button a{
+    display: block;
+    line-height: 25px;
+}
+.login{
+    background-color: #f49600;
+}
+.join{
+    background-color: #50b5ff;
+}
+
+/* ========================================================================= */
+.mv{
+    height: 454px;
+    background-image: url(../images/key_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+h2{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+.mv .txt{
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.mv .searchBox{
+    width: 560px;
+    padding: 20px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.7);
+    margin: 60px auto 0; /*상 좌우 하;*/
+    margin-top: 60px;
+    border-radius: 5px;
+}
+.mv input{
+    width: 560px;
+    height: 50px;
+    border: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.mv .inputBox{
+    position: relative;
+}
+.mv .inputBox button{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.txtBox:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+.txtBox {
+    width: 560px;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.txtBox p:first-child{
+    float: left;
+}
+.txtBox p:last-child{
+    float: right;
+}
+.txtBox p:first-child a:hover{
+    text-decoration: underline;
+}
+/* ==================================================================== */
+
+.s1 h3{
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+    margin-top: 80px;
+}
+.ask{
+    text-align: center;
+    color: #f49600;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.s1 .con{
+    width: 1092px;
+    margin: 30px auto 22px;
+}
+.s1 .con:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.s1 .con .intro{
+    float: left;
+    width: 348px;
+    margin-right: 24px;
+}
+.s1 .con .intro img{
+    transition: all 0.6s;
+}
+.s1 .con .intro img:hover{
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    /* box-shadow: x값 y값 번짐(크기) 색상 */
+}
+.s1 .con .intro:last-child{
+    margin-right: 0;
+}
+.s1 .con h4{
+    color: #0087ea;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 22px;
+}
+.s1 .con .intro p{
+    font-size: 14px;
+    color: #666;
+}
+/* ========================================================== */
+.s2{
+    background-color: #f0f0f0;
+    margin-top: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.s2 .con{
+    width: 1092px;
+    margin: 0 auto;
+}
+.s2 .con:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.s2 h3{
+    font-size: 26px;
+    color: #333;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.s2>p{
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+.s2 .box{
+    width: 346px;
+    height: 300px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    background-color: #fff;
+}
+.s2 .box:hover img{
+    transform: scale(1.5);
+}
+.s2 .box:nth-child(3), .s2 .box:last-child{
+    margin-right: 0;
+}
+.s2 .box .photo{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.s2 .photo img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+.s2 .photo .tit{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    color: #179dff;
+    font-weight: bold;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
+    text-indent: 15px;
+    padding-bottom: 10px;
+}
+.s2 .photo .tit p span{
+    color: #666;
+    font-weight: bold;
+}
+.s2 h4{
+    color: #fff;
+}
+.s2 .txt{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.s2 .txt .list{
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #666;
+}
+.s2 .txt .list li{
+    margin-bottom: 5px;
+}
+.s2 .txt .list .user{
+    background-image: url(../images/icon_user.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-position: 0 center;
+}
+.s2 .txt .count{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.s2 .txt .count li{
+    float: left;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+.s2 .txt .count .area{
+    background-image: url(../images/icon_spot.png);
+    padding-left: 15px;
+}
+.s2 .txt .count .view{
+    background-image: url(../images/icon_view.png);
+    padding-left: 20px;
+}
+.s2 .txt .count .clip{
+    background-image: url(../images/icon_copy.png);
+    padding-left: 17px;
+}
+.more{
+    width: 346px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #666;
+    line-height: 50px;
+    display: block;
+}
+/* ============================================================== */
+.s3{
+    padding-top: 70px;
+}
+.s3 h3{
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.s3>p{
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+.s3 .con{
+    width: 1092px;
+    margin: 30px auto 30px;
+}
+.s3 .con:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.s3 .con .box{
+    float: left;
+    width: 261px;
+    height: 310px;
+    margin-right: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+.s3 .con .box:nth-child(3), .s3 .con .box:last-child{
+    margin-right: 0;
+}
+.s3 .con .box:first-child, .s3 .con .box:last-child{
+    width: 538px;
+    height: 310px;
+}
+.s3 .box .photo{
+    position: relative;
+    height: 159px;
+    overflow: hidden;
+}
+.s3 .box:hover img{
+    transform: scale(1.2)
+}
+.s3 .box .photo img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;;
+} 
+.s3 .box .location{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #fff;
+    font-weight: bold;
+    background-image: url(../images/spot_cnt.png);
+    background-repeat: no-repeat;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    /* padding: 2px 0 4px 20px;
+                상  우 하  좌 */
+}
+
+.s3 h4{
+    padding-top: 25px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.s3 .txt{
+    text-align: center;
+}
+.s3 .txt p{
+    font-size: 14px;
+    color: #666;
+    padding: 0 15px;
+}
+/* 너비를 주지 않고 패딩을 주면 그 안에서 여백을 갖기만 너비를 주고 패딩을 주면 넘어감 */
+/* ======================================================================= */
+.s4{
+    padding: 70px 0 30px;
+    background-color: #f0f0f0;
+    margin-top: 70px;
+}
+.s4 h3{
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.s4 .con div{
+    position: relative;
+}
+.s4 .con1{
+    width: 1092px;
+    margin: 0 auto;
+}
+.s4 .con1:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.s4 .con1 .c1{
+    width: 1092px;
+    margin-bottom: 17px;
+}
+.s4 .con1 .c1:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.s4 .con1 .c1 .photo{
+    background-color: khaki;
+    float: left;
+    width: 260px;
+    height: 260px;
+    margin-left: 17px;
+    position: relative;
+}
+.s4 img{
+    width: 100%;
+    height: 100%;
+}
+.s4 .con1 .c1 .photo:first-child{
+    width: 538px;
+    height: 260px;
+    margin-left: 0;
+}
+.s4 .con1 .tit{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    transform: translate(-50%,-50%);
+    /* 글자가 가운데로 오는 마법!!!!! */
+}
+.s4 .con2{
+    width: 1092px;
+    margin: 0 auto;
+}
+.s4 .con2:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.s4 .con2 .c2{
+    float: left;
+}
+.s4 .con2 .photo{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    margin-right: 17px;
+    margin-bottom: 17px;
+}
+.s4 .con2 .c2_4 .photo{
+    width: 260px;
+    height: 538px;
+    margin-right: 0;
+}
+.s4 .con2 .c2_4{
+    float: left;
+}
+.s4 .con2 .tit{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -7px;
+    width: 100%;
+    text-align: center;
+    /* position:absolute로 요소들을 겹쳐두어야 할때,
+       가운데 위치시키는 방법
+       
+       1. position: absolute;
+          top:50%;
+          left:50%;
+
+       2. 너비값과 높이값의 절반만큼을
+          margin으로 당겨온다
+          ex) margin-left:-200px;
+              margin-top:-200px;
+    */
+}
+.s4 .con1 p{
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.s4 .con2 p{
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+/* 글자 그림자 넣기 { 가로 세로 번짐 } */
+
+/* ==================================================================================== */
+.s5{
+    background-image: url(../images/mobile_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.s5 .con{
+    width: 1092px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+.s5 .con:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.s5 .box:first-child{
+    float: left;
+}
+.s5 .box:last-child{
+    float: right;
+}
+.s5 h3{
+    font-size: 26px;
+    color: #0083e3;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.s5 p{
+    color: #666;
+}
+.s5 ul{
+    margin-top: 35px;
+}
+.s5 ul:after{
+    clear: both;
+    display: block;
+    content: '';
+}
+.s5 ul li{
+    margin-right: 10px;
+    float: left;
+}
+/* ======================================================================== */
+footer{
+    background-color: #363c48;
+}
+footer .fWrap{
+    width: 1092px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.fWrap:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.fWrap .box{
+    float: left;
+    width: 260px;
+    margin-right: 15px;
+}
+.fWrap .box:last-child{
+    margin-right: 0;
+}
+.fWrap h4{
+    font-size: 14px;
+    color: #ccc;
+    border-bottom: 1px solid #424753;
+    padding-bottom: 2px;
+    margin-bottom: 8px;
+}
+.fWrap ul{
+    color: #fff;
+    font-size: 12px;
+}
+.fWrap ul li{
+    margin-bottom: 10px;
+}
+.fWrap .boxWrap{
+    margin-top: 20px;
+}
+.fWrap .boxWrap:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.fWrap .boxWrap div{
+    width: 113px;
+    border: 1px solid #424753;
+    float: left;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #ccc;
+    padding: 4px;
+    background-image: url(../images/arr_sel.png);
+    background-repeat: no-repeat;
+    background-position: 90px center;
+}
+.fWrap .boxWrap div:first-child{
+    margin-right: 10px;
+}
+.fWrap .sns{
+    margin-top: 10px;
+}
+.fWrap .sns:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.fWrap .sns li{
+    float: left;
+    margin-right: 10px;
+}
+footer .copy{
+    background-color: rgba(0,0,0,0.2);
+}
+footer .copy .cwrap{
+    width: 1092px;
+    margin: 0 auto;
+    color: #ccc;
+    font-size: 12px;
+}
+footer .copy:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.copy .c1{
+    float: left;
+}
+.copy .c2{
+    float: right;
+}
+
+/*s3 내부 박스들 인터랙션 구현*/
+
+.s3 .con>div{
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 2s;
+}
+.s3 .con>div.on{
+    transform: translateY(0);
+    opacity: 1;
+}

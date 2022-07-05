@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* ---------------------------------------- */
+
+header{
+    height: 78px;
+}
+.wrap{
+    width: 980px;
+    height: 78px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.gnb{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    color: #000;
+}
+.gnb:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.gnb li{
+    float: left;
+    margin-left: 20px;
+    color: #323232;
+    background-image: url("../images/line.jpg");
+    background-repeat: no-repeat;
+    background-size: 1px;
+    padding-left: 20px;
+}
+.gnb li:first-child{
+    background-image: none;
+}
+/* ----------------------------------------------------- */
+.mv{
+    height: 600px;
+    background-image: url("../images/slider1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.mv a{
+    height: 600px;
+    display: block;
+    /* font-size: 0; 글자 없애려고...*/
+    text-indent: -9999px;
+    /* 들여쓰기 속성
+       들여쓰기를 위해서도 쓰이지만
+       웹접근성(시각장애인 등 눈으로 보는 웹페이지를
+       사용하지 않는 사람들을 위한 텍스트 만으로
+       웹을 이용할 수 있게끔 만드는 작업)을 맞추기 위해서도 사용된다.
+       주로 블록요소 내에서 글자를 보이지 않게 하기 위해 쓰인다.   
+    */
+}
+/* ------------------------------------------------------------ */
+
+.con{
+    margin-top: 40px;
+}
+.con h3{
+    color: #b3917c;
+    font-size: 24px;
+    text-align: center;
+}
+.con h3 span{
+    font-weight: normal;
+}
+.con .container{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.con .container:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+.con .container .box{
+    width: 326px;
+    float: left;
+    text-align: center;
+}
+.con .container .box .title{
+    font-size: 18px;
+    margin-top: 14px;
+    font-weight: bold;
+}
+.con .container .box .txt{
+    font-size: 13px;
+}
+
+
+/* ===================================== */
+
+.section{
+    background-image: url(../images/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+.section h3{
+    color: #fff;
+    font-size: 24px;
+    padding-top: 40px;
+    text-align: center;
+}
+.section h3 span{
+    font-weight: normal;
+}
+.section .container{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.section .container:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.section .container .vid{
+    width: 470px;
+    height: 270px;
+    background-color: grey;
+    float: left;
+   
+}
+.section .container ul{
+    width: 481px;
+    float: right;
+}
+.section .container ul:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.section .container ul li{
+    width: 157px;
+    height: 130px;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.section .container ul li:nth-child(3),
+.section .container ul li:last-child{
+    margin-right: 0;
+}
+.section .container ul li img{
+    width: 100%;
+    height: 100%;
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+
+footer{
+    height: 350px;
+    background-color: #171717;
+    color: #ababab;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.footer{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+footer .footer div{
+    width: 326px;
+    float: left;
+}
+footer div h4{ 
+    color: #b3917c;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.footer p{
+    color: #fff;
+}
+footer .ftbox .tel{
+    color: yellow;
+    font-weight: bold;
+    font-size: 17px;
+}
+footer .ftbox .telclick{
+    font-size: 14px;
+    font-size: 16px;
+}
+footer .ftbox .time{
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 20px;
+}
+address{
+    font-style: normal;
+    font-size: 12px;
+}
+.news{
+    font-size: 12px;
+}
+/* 요소이름:after{content:'';} */
+/* 요소이름:before{content:'';} 
+
+   해당 요소 내에 가짜구조를 마지막자식/첫번째 자식으로
+   추가하게끔 하는 css 가상선택자
+   기본적으로 인라인요소 
+*/
+.news li:before{content:'· ';}  
+/* 마진 줘도 됨 */
+.sns{
+    margin-top: 20px;
+}
+.sns:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.sns li{
+    float: left;
+    margin-left: 20px;
+}
+.news li a:hover{
+    text-decoration:  underline;
+}
+
